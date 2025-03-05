@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b0c10;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: relative;
+        }
+        .background-spline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .navbar {
+            background: #1f2833;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .auth-buttons .btn-chatbot {
+            background-color: #66fcf1;
+            color: #0b0c10;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        #chat-container {
+            width: 70%;
+            max-width: 700px;
+            height: 600px;
+            margin: 40px auto;
+            border: 2px solid #66fcf1;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #1f2833;
+            box-shadow: 0px 0px 15px rgba(102, 252, 241, 0.5);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .footer {
+            background: #1f2833;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-nav a {
+            color: #66fcf1;
+            text-decoration: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-spline">
+        <iframe src='https://my.spline.design/blue-f5bca9c709410af0b8ba3e7509745f82/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    <header class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" width="80">
+            <strong>AstroNav</strong>
+        </a>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="https://science.nasa.gov/solar-system/" target="_blank">Explore</a></li>
+                <li><a href="https://www.nasa.gov/missions/" target="_blank">Missions</a></li>
+                <li><a href="https://share.imagica.ai?q=55674867-ea07-4afe-886e-e790b841be7d" target="_blank">WebApp</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="Chatbot.html" class="btn-chatbot">AI Chatbot</a>
+        </div>
+    </header>
+    <div id="chat-container">
+        <iframe src="https://www.chatbase.co/chatbot-iframe/w3LUS8JVrW69zqKu--PQw"></iframe>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2050 AstroNav. All rights reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroNav - Space Adventure</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        #spline-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding-bottom: 100px;
+        }
+        .planets-section {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Spline Background -->
+    <spline-viewer id="spline-background" url="https://prod.spline.design/uf1d6PlLOLC1v0Do/scene.splinecode"></spline-viewer>
+
+    <header class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" width="80">
+            <strong>AstroNav</strong>
+        </a>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="https://science.nasa.gov/solar-system/" target="_blank">Explore</a></li>
+                <li><a href="https://www.nasa.gov/missions/" target="_blank">Missions</a></li>
+                <li><a href="https://share.imagica.ai?q=55674867-ea07-4afe-886e-e790b841be7d" target="_blank">WebApp</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="Chatbot.html" class="btn-chatbot">AI Chatbot</a>
+        </div>
+    </header>
+    
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Discover <span class="highlight">experience</span> of the world <span class="highlight">beyond</span> earth</h1>
+            <p>Plan your extraordinary space adventure</p>
+            <div class="journey-info">
+                <div class="info-box">
+                    <p>Project</p>
+                    <strong>Tour De Space</strong>
+                </div>
+                <div class="info-box">
+                    <p>Participant</p>
+                    <strong>3 People</strong>
+                </div>
+                <div class="info-box">
+                    <p>Date</p>
+                    <strong>28 February 2050</strong>
+                </div>
+                <button class="btn-journey">Start your journey</button>
+            </div>
+        </div>
+
+        <!-- Space Navigation Section -->
+<div class="navigation-section">
+    <h2>Space Navigation Systems: Charting the Cosmos</h2>
+    <p>Navigating through space requires precise calculations, cutting-edge technology, and a deep understanding of celestial mechanics. Unlike Earth-bound travel, space navigation operates in a vacuum where conventional GPS systems are ineffective. Instead, space missions rely on <strong>celestial navigation, star trackers, onboard sensors, and AI-driven algorithms</strong> to determine a spacecraft's position, velocity, and trajectory in real-time.</p>
+
+    <h3>Key Technologies in Space Navigation:</h3>
+    <ul>
+        <li><strong>Inertial Navigation Systems (INS):</strong> Uses gyroscopes and accelerometers to measure motion and maintain orientation.</li>
+        <li><strong>Celestial Navigation:</strong> Utilizes the positions of stars and pulsars as fixed reference points for determining location.</li>
+        <li><strong>Deep Space Network (DSN):</strong> A global network of radio antennas that communicate with interplanetary missions and provide precise tracking data.</li>
+        <li><strong>AI and Machine Learning:</strong> Enhances autonomous navigation, allowing spacecraft to adjust their trajectory based on real-time observations.</li>
+        <li><strong>Optical Navigation:</strong> Uses high-resolution cameras to analyze celestial bodies and determine precise positioning.</li>
+    </ul>
+
+    <h3>Challenges in Space Navigation:</h3>
+    <ul>
+        <li><strong>Gravitational Influences:</strong> Objects in space are constantly affected by the gravity of planets, moons, and even distant stars, requiring continuous trajectory adjustments.</li>
+        <li><strong>Signal Delays:</strong> Communication with Earth takes minutes to hours, making real-time remote control impractical for deep-space missions.</li>
+        <li><strong>Cosmic Hazards:</strong> Spacecraft must avoid debris, radiation belts, and unpredictable cosmic phenomena while staying on course.</li>
+    </ul>
+
+    <h3>Future of Space Navigation:</h3>
+    <p>With advancements in <strong>quantum sensors, interplanetary internet, and AI-driven autonomous spacecraft</strong>, future missions will navigate with even greater precision. Upcoming technologies like <strong>X-ray pulsar-based navigation (XNAV)</strong> and <strong>laser-based positioning systems</strong> could revolutionize deep-space travel, enabling humanity's journey to Mars, asteroids, and beyond.</p>
+        </div>
+        
+        <!-- Planets Section -->
+        <div class="planets-section">
+            <div class="planet">
+                <img src="images/mercury.png" alt="Mercury">
+                <div class="description">
+                    <h4>Mercury</h4>
+                    <p>Mercury is the closest planet to the Sun and the smallest in the Solar System. It has a very thin atmosphere, causing extreme temperature fluctuations.</p>
+                    <p>Due to its proximity to the Sun, Mercury experiences temperatures ranging from extremely hot during the day (up to 430°C) to freezing cold at night (down to -180°C). The planet has no moons and is known for its heavily cratered surface, similar to the Moon. Mercury's rotation period is longer than its year, taking 59 Earth days to rotate once on its axis while completing an orbit around the Sun in just 88 Earth days.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/mercury/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet reverse">
+                <img src="images/venus.png" alt="Venus">
+                <div class="description">
+                    <h4>Venus</h4>
+                    <p>Venus is the second planet from the Sun and has a thick, toxic atmosphere composed mainly of carbon dioxide. It is the hottest planet due to its greenhouse effect.</p>
+                    <p>With surface temperatures averaging around 467°C, Venus is hotter than Mercury despite being further from the Sun. The planet's atmosphere is dense and clouds of sulfuric acid obscure its surface. Venus rotates very slowly on its axis, resulting in a day that is longer than its year. It has no moons and is often referred to as Earth's "sister planet" due to its similar size and composition.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/venus/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet">
+                <img src="images/earth.png" alt="Earth">
+                <div class="description">
+                    <h4>Earth</h4>
+                    <p>Earth is the only known planet to support life. It has vast oceans, diverse ecosystems, and an atmosphere that sustains various life forms.</p>
+                    <p>Covering about 71% of its surface with water, Earth has a unique atmosphere composed of 78% nitrogen and 21% oxygen. The planet's axial tilt creates seasons, and its magnetic field protects it from solar radiation. Earth has one natural satellite, the Moon, which influences tides and stabilizes the planet's rotation. The diverse climates and habitats on Earth support millions of species, making it a vibrant and dynamic planet.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/earth/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet reverse">
+                <img src="images/mars.png" alt="Mars">
+                <div class="description">
+                    <h4>Mars</h4>
+                    <p>Also called the Red Planet, Mars has iron oxide on its surface. It has the largest volcano in the solar system, Olympus Mons, and shows signs of past water flow.</p>
+                    <p>Mars is characterized by its reddish appearance, which is due to iron oxide (rust) on its surface. The planet has a thin atmosphere, primarily composed of carbon dioxide, and experiences seasons similar to Earth. Mars has two small moons, Phobos and Deimos, and evidence suggests that liquid water may have existed on its surface in the past. Ongoing exploration aims to determine the planet's potential for past or present life.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/mars/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet">
+                <img src="images/jupiter.png" alt="Jupiter">
+                <div class="description">
+                    <h4>Jupiter</h4>
+                    <p>Jupiter is the largest planet in our Solar System, known for its massive storm, the Great Red Spot, and its strong magnetic field.</p>
+                    <p>Jupiter is a gas giant with a thick atmosphere composed mainly of hydrogen and helium. It has a strong magnetic field and dozens of moons, including the four largest known as the Galilean moons: Io, Europa, Ganymede, and Callisto. The Great Red Spot is a massive storm that has been raging for centuries. Jupiter's rapid rotation causes it to have a flattened shape and numerous bands of clouds, making it one of the most recognizable planets in the night sky.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/jupiter/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet reverse">
+                <img src="images/saturn.png" alt="Saturn">
+                <div class="description">
+                    <h4>Saturn</h4>
+                    <p>Saturn is famous for its spectacular ring system composed of ice and rock particles. It has over 80 moons, including Titan, which has a thick atmosphere.</p>
+                    <p>Saturn is also a gas giant, with a composition similar to Jupiter. Its rings are made of ice and rock particles and are the most extensive and complex in the solar system. Saturn's low density means it could float in water if a body of water large enough existed. The planet's winds can reach speeds of over 1,100 miles per hour, and its largest moon, Titan, is larger than the planet Mercury and has lakes of liquid methane.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/saturn/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet">
+                <img src="images/uranus.png" alt="Uranus">
+                <div class="description">
+                    <h4>Uranus</h4>
+                    <p>Uranus is tilted on its side, making it unique among planets. It has a bluish color due to methane in its atmosphere and faint rings.</p>
+                    <p>Uranus rotates on its side, resulting in extreme seasonal variations. It is an ice giant, composed mainly of water, ammonia, and methane ices. The planet has a faint ring system and 27 known moons, with Titania and Oberon being the largest. Uranus's atmosphere is much colder than that of other planets, with temperatures dropping to -224 degrees Celsius, making it the coldest planet in the solar system.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/uranus/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="planet reverse">
+                <img src="images/neptune.png" alt="Neptune">
+                <div class="description">
+                    <h4>Neptune</h4>
+                    <p>Neptune is the farthest planet from the Sun, known for its deep blue color and extremely fast winds, the strongest in the Solar System.</p>
+                    <p>Neptune is similar in composition to Uranus and is also an ice giant. It has strong winds and storms, with the fastest recorded winds in the solar system, reaching speeds of over 1,200 miles per hour. The planet has a faint ring system and 14 known moons, with Triton being the largest. Triton is unique because it has a retrograde orbit, suggesting it may have been captured by Neptune's gravity. Neptune's deep blue color is due to the presence of methane in its atmosphere.</p>
+                    <div class="explore-more">
+                        <a href="https://science.nasa.gov/neptune/facts/" class="btn-explore" target="_blank">Explore More</a>
+                    </div>
+                </div>
+            </div>          
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2050 AstroNav. All rights reserved.</p>
+            <ul class="footer-nav">
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
+</body>
+</html>

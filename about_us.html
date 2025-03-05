@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AstroNav</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #0a0f36; /* Dark Blue Background */
+            color: #ffffff; /* White text for readability */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /* About Us Section */
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .team-member {
+            background-color: #2c325c;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .role {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .contact {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        /* Footer - Matching Header */
+        .footer {
+            background-color: #1b1f3b;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .footer a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" width="80" height="auto">
+            <strong>AstroNav</strong>
+        </a>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="https://science.nasa.gov/solar-system/" target="_blank">Explore</a></li>
+                <li><a href="https://www.nasa.gov/missions/" target="_blank">Missions</a></li>
+                <li><a href="https://share.imagica.ai?q=55674867-ea07-4afe-886e-e790b841be7d" target="_blank">WebApp</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="Chatbot.html" class="btn-chatbot">AI Chatbot</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <h1>Meet Our Team</h1>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/Aryan.jpg" alt="Aryan Suthar">
+                <h3>Suthar Aryan</h3>
+                <p class="role">Tech Lead | AI & UI Developer</p>
+                <p>
+                    Aryan Suthar is the visionary behind AstroNav's backend architecture, seamlessly integrating AI-driven solutions and optimizing chatbot functionality. His expertise in real-time data processing and system architecture ensures a robust, efficient, and user-friendly experience.
+                </p>
+                <p class="contact">📧 aryan.suthar@itmbu.ac.in</p>
+            </div>
+                        
+
+            <div class="team-member">
+                <img src="images/Mihir.jpg" alt="Mihir Kumar Chauhan">
+                <h3>Chauhan Mihir Kumar</h3>
+                <p class="role">Frontend Developer | UI Designer</p>
+                <p>Mihir is responsible for crafting an intuitive user interface, making the website visually appealing and user-friendly across all devices.</p>
+                <p class="contact">📧 chauhanmihir083@gmail.com</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/Jay.jpg" alt="Jay Rajput">
+                <img src="images/Vikash.jpg" alt="Vikash Solanki">
+                <h3>Prajapati Jay & Solanki Vikas</h3>
+                <p class="role">Content & Research</p>
+                <p class="role">Content & Research</p>
+                <p>Jay and Vikash contribute to research, ensuring accuracy and depth in AstroNav's content.</p>
+                <p class="contact">📧 Jay: prajapatijay2445@gmail.com</p>
+                <p class="contact">📧 Vikash: vikassolanki2802@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> AstroNav. All rights reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

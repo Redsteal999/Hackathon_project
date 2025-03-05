@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+  color: #FFA500;
+}
+
+/* Fix for Chatbot Button */
+.auth-buttons .btn-chatbot {
+  padding: 10px 20px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.auth-buttons .btn-chatbot:hover {
+  background-color: #e69500;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.auth-buttons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('space-background.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-section .highlight {
+  color: #FFA500;
+}
+
+.journey-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.info-box {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-journey {
+  background-color: #FFA500;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-journey:hover {
+  background-color: #e69500;
+}
+
+.planets-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.planet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.planet.reverse {
+  flex-direction: row-reverse;
+}
+
+.planet img {
+  width: 35%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.planet img:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  width: 50%;
+  padding: 20px;
+  background-color: #2a2a2a;
+}
+
+.description h4 {
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #888;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-nav li a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+  color: #FFA500;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.welcome-section p {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.team-member {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #00FFCC;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.role {
+  font-weight: bold;
+  color: #00FFCC;
+}
+
+.contact {
+  font-style: italic;
+  color: #fff;
+}
+
+.navigation-section {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.navigation-section h2, 
+.navigation-section h3 {
+  color: #f9a825;
+}
+
+.btn-explore {
+  color: #0074D9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 2px solid #0074D9;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-explore:hover {
+  background-color: #0074D9;
+  color: white;
+}
