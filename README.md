@@ -1,1 +1,1 @@
-# 3D-Solar-System-Using-Javascript
+# Solar-System-Navigation_AIChart_Bot
