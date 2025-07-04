@@ -202,7 +202,7 @@
         </div>
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2050 AstroNav. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> AstroNav. All rights reserved.</p>
             <ul class="footer-nav">
                 <li><a href="#privacy">Privacy Policy</a></li>
                 <li><a href="#terms">Terms of Service</a></li>
@@ -212,5 +212,8 @@
     </div>
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
